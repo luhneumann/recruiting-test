@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #F1F1F1;
+  width: 100%;
+}
+body header {
+  position: relative;
+  width: 1920ps;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  padding: 20px 10px;
+}
+body header .logo {
+  margin: 36px 34px 335px 63px;
+}
+body header .mainmenu {
+  display: flex;
+  align-items: center;
+  width: 995px;
+  height: 45px;
+}
+body header .mainmenu input {
+  width: 469px;
+  height: 45px;
+  padding: 14px;
+  border-radius: 5px;
+  outline: 0;
+  border: none;
+  background: #ededed;
+  opacity: 1;
+}
+body header .mainmenu ::-moz-placeholder {
+  background-color: #EDEDED;
+}
+body header .mainmenu ::placeholder {
+  background-color: #EDEDED;
+}
+body header .mainmenu button {
+  width: 120px;
+  height: 45px;
+  margin-right: 33px;
+  background: #34cb2e;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  opacity: 1;
+}
+body header .mainmenu .link-block {
+  display: flex;
+  align-items: center;
+  margin-left: 17px;
+  height: 23px;
+}
+body header .mainmenu .link-block a {
+  position: relative;
+  display: flex;
+  color: #000000;
+  font-size: 12px;
+  padding-left: 10px;
+}
+body header .mainmenu .link-block span {
+  position: relative;
+  display: flex;
+  width: 12px;
+  height: 12px;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 8px;
+  font-weight: bold;
+  border-radius: 50%;
+  right: 5px;
+  top: -10px;
+}
+body .middle {
+  width: 1920px;
+  max-width: 100vh;
+  height: 500px;
+}
+body .middle img {
+  width: 1920px;
+}
+body .products-view {
+  position: relative;
+  width: 1285px;
+  height: 567px;
+  margin: 0 335px;
+  overflow: 20px;
+}
+body .products-view .slide-title {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  margin-top: 72px;
+}
+body .products-view .pre-btn,
+body .products-view .pos-btn {
+  width: 35px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 9;
+}
+body .products-view .pre-btn {
+  left: -17.5px;
+  top: 291px;
+}
+body .products-view .pos-btn {
+  right: 35px;
+  top: 291px;
+}
+body .products-view .card-wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scroll-behavior: smooth;
+}
+body .products-view .card {
+  display: grid;
+  width: 300px;
+  height: 494px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  opacity: 1;
+}
+body .products-view .card .card-image {
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .products-view .card .product-image {
+  height: 250px;
+  width: 250px;
+}
+body .products-view .card .card-info {
+  height: 170px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+body .products-view .card .card-info .product-description {
+  font-size: 13px;
+  text-align: center;
+  font-weight: 400;
+  width: 230px;
+  height: 36px;
+  letter-spacing: 0;
+}
+body .products-view .card .card-info .old-price {
+  height: 17px;
+}
+body .products-view .card .card-info .old-price span {
+  align-items: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #909090;
+  text-decoration: line-through;
+}
+body .products-view .card .card-info .sale-price {
+  height: 28px;
+  color: #34CB2E;
+  font-size: 20px;
+  font-weight: 900;
+}
+body .products-view .card .card-info .payment-condition {
+  font-size: 12px;
+  color: #909090;
+}
+body .products-view .card .card-btn-container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 83px;
+}
+body .products-view .card .card-btn-container .card-btn {
+  position: relative;
+  font-size: 13px;
+  background-color: #34CB2E;
+  display: block;
+  height: 45px;
+  width: 180px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
