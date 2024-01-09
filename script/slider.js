@@ -15,12 +15,7 @@ fetch(
   .then((response) => response.json())
   .then((data) => {
     data.forEach((element) => {
-      console.log(element.description)
-      console.log(element.description)
-      console.log(element.description)
-
-
-
+      console.log(element.product-description)
       
       $(".slide-container").slick(
         "slickAdd",
@@ -48,7 +43,3 @@ fetch(
   })
 
  
-
-
-
-

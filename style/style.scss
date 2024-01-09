@@ -97,9 +97,9 @@ body {
       }
     }
   }
-  .products-view {
+  .products-view-1 {
     position: relative;
-    height: 2109px;
+    height: 607px;
     width: 1285px;
     margin: 0 335px;
 
@@ -108,10 +108,10 @@ body {
       font-weight: 800;
       margin-bottom: 30px;
       margin-top: 72px;
-    }
+    }   
 
     .pre-btn,
-    .pos-btn {
+    .pos-btn{
       width: 35px;
       height: 25px;
       position: absolute;
@@ -126,22 +126,28 @@ body {
       z-index: 9;
     }
 
-    .pre-btn {
+    .pre-btn{
       left: -17.5px;
       top: 291px;
     }
-    .pos-btn {
-      right: 35px;
+    .pos-btn{
+      right: -17px;
       top: 291px;
     }
 
     .slide-container {
       display: flex;
+    
+
+      .slick-slide {       
+          margin: 0 10px;     
+      }
+
       .card {
         flex-direction: column;        
         border-radius: 10px;
         background-color: #ffffff; 
-        display: inline;
+        
 
         .card-image {
           height: 300px;
@@ -213,11 +219,19 @@ body {
             font-weight: bold;
             border: none;
             border-radius: 5px;
+            cursor: pointer;
             outline: none;
             opacity: 1;
           }
         }
       }
     }
+  }
+
+  .banners{
+    height: 260px;
+    width: 1285px;
+    margin: 0 335px;
+    text-align: center;
   }
 }
