@@ -9,21 +9,25 @@
 }
 
 body {
-  background-color: #F1F1F1;
-  width: 100%;
+  background-color: #f1f1f1;
+  width: 1920px;
+  height: 2609px;
+  max-width: 100%;
+  height: 100%;
 }
 body header {
   position: relative;
-  width: 1920ps;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #ffffff 0% 0% no-repeat padding-box;
-  padding: 20px 10px;
 }
 body header .logo {
-  margin: 36px 34px 335px 63px;
+  display: flex;
+  align-items: center;
+  padding-left: 335px;
+  padding-right: 36px;
 }
 body header .mainmenu {
   display: flex;
@@ -42,10 +46,10 @@ body header .mainmenu input {
   opacity: 1;
 }
 body header .mainmenu ::-moz-placeholder {
-  background-color: #EDEDED;
+  background-color: #ededed;
 }
 body header .mainmenu ::placeholder {
-  background-color: #EDEDED;
+  background-color: #ededed;
 }
 body header .mainmenu button {
   width: 120px;
@@ -88,20 +92,11 @@ body header .mainmenu .link-block span {
   right: 5px;
   top: -10px;
 }
-body .middle {
-  width: 1920px;
-  max-width: 100vh;
-  height: 500px;
-}
-body .middle img {
-  width: 1920px;
-}
 body .products-view {
   position: relative;
+  height: 2109px;
   width: 1285px;
-  height: 567px;
   margin: 0 335px;
-  overflow: 20px;
 }
 body .products-view .slide-title {
   font-size: 30px;
@@ -132,38 +127,33 @@ body .products-view .pos-btn {
   right: 35px;
   top: 291px;
 }
-body .products-view .card-wrapper {
+body .products-view .slide-container {
   display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  scroll-behavior: smooth;
 }
-body .products-view .card {
-  display: grid;
-  width: 300px;
-  height: 494px;
+body .products-view .slide-container .card {
+  flex-direction: column;
   border-radius: 10px;
   background-color: #ffffff;
-  opacity: 1;
+  display: inline;
 }
-body .products-view .card .card-image {
+body .products-view .slide-container .card .card-image {
   height: 300px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body .products-view .card .product-image {
+body .products-view .slide-container .card .product-image {
   height: 250px;
   width: 250px;
 }
-body .products-view .card .card-info {
+body .products-view .slide-container .card .card-info {
   height: 170px;
   display: grid;
   justify-content: center;
   text-align: center;
 }
-body .products-view .card .card-info .product-description {
+body .products-view .slide-container .card .card-info .product-description {
   font-size: 13px;
   text-align: center;
   font-weight: 400;
@@ -171,36 +161,36 @@ body .products-view .card .card-info .product-description {
   height: 36px;
   letter-spacing: 0;
 }
-body .products-view .card .card-info .old-price {
+body .products-view .slide-container .card .card-info .old-price {
   height: 17px;
 }
-body .products-view .card .card-info .old-price span {
+body .products-view .slide-container .card .card-info .old-price span {
   align-items: center;
   font-size: 12px;
   font-weight: 400;
   color: #909090;
   text-decoration: line-through;
 }
-body .products-view .card .card-info .sale-price {
+body .products-view .slide-container .card .card-info .sale-price {
   height: 28px;
-  color: #34CB2E;
+  color: #34cb2e;
   font-size: 20px;
   font-weight: 900;
 }
-body .products-view .card .card-info .payment-condition {
+body .products-view .slide-container .card .card-info .payment-condition {
   font-size: 12px;
   color: #909090;
 }
-body .products-view .card .card-btn-container {
+body .products-view .slide-container .card .card-btn-container {
   display: grid;
   align-items: center;
   justify-items: center;
   height: 83px;
 }
-body .products-view .card .card-btn-container .card-btn {
+body .products-view .slide-container .card .card-btn-container .card-btn {
   position: relative;
   font-size: 13px;
-  background-color: #34CB2E;
+  background-color: #34cb2e;
   display: block;
   height: 45px;
   width: 180px;
