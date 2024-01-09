@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.slide-container').slick({
-    infinite: true,
+    infinite: false,
     slidesToShow: 4,
     slidesToScroll:4,
     prevArrow: $('.pre-btn'),
@@ -17,11 +17,7 @@ fetch(
     data.forEach((element) => {
       console.log(element.description)
       console.log(element.oldPrice)
-      console.log(element.payment)
-
-
-
-      
+      console.log(element.payment)      
       $(".slide-container").slick(
         "slickAdd",
       `  
