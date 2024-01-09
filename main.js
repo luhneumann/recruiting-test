@@ -8,19 +8,14 @@ $(document).ready(function(){
 });
 
 fetch(
-  "/data/products.json"
+  "https://raw.githubusercontent.com/luhneumann/recruiting-test/main/data/products.json"
 )
   .then((response) => response.json())
   .then((data) => {
     data.forEach((element) => {
-      console.log("===========")
-      console.table(element)
-      console.log("===========")
+      console.log(element.product-description)
 
-      $('.slider-container').slick("slickAdd",
-      <div class="card">
-        <div class="like"></div>
-      </div>)
+      
       
     });
   })
