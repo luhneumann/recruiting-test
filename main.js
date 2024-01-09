@@ -17,7 +17,7 @@ fetch(
     data.forEach((element) => {
       console.log(element.description)
       console.log(element.oldPrice)
-      console.log(element.payment)      
+      console.log(element.image)      
       $(".slide-container").slick(
         "slickAdd",
       `  
