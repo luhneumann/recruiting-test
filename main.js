@@ -16,8 +16,8 @@ fetch(
   .then((data) => {
     data.forEach((element) => {
       console.log(element.description)
-      console.log(element.description)
-      console.log(element.description)
+      console.log(element.oldPrice)
+      console.log(element.payment)
 
 
 

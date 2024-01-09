@@ -25,7 +25,7 @@
   },
   {
     "id":"4",
-    "image":"https://github.com/luhneumann/recruiting-test/blob/main/assets/itens/.png", 
+    "image":"https://github.com/luhneumann/recruiting-test/blob/main/assets/itens/b2b.png", 
     "description": "Produto do teste de desenvolvedor front-end da agência Agrada",
     "oldPrice":"R$ 2049,00",
     "salePrice":"R$ 1655,90",
@@ -33,7 +33,7 @@
   },
   {
     "id":"5",
-    "product-image":"https://github.com/luhneumann/recruiting-test/blob/main/assets/itens/marketplace.png", 
+    "image":"https://github.com/luhneumann/recruiting-test/blob/main/assets/itens/b2c.png", 
     "description": "Produto do teste de desenvolvedor front-end da agência Agrada",
     "oldPrice":"R$ 2049,00",
     "salePrice":"R$ 1655,90",
@@ -41,7 +41,7 @@
   },
   {
     "id":"6",
-    "product-image":"../assets/itens/b2c.png", 
+    "image":"https://github.com/luhneumann/recruiting-test/blob/main/assets/itens/marketplace.png", 
     "description": "Produto do teste de desenvolvedor front-end da agência Agrada",
     "oldPrice":"R$ 2049,00",
     "salePrice":"R$ 1655,90",
