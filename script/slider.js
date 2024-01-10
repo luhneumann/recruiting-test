@@ -1,13 +1,15 @@
-$(document).ready(function(){
-  $('.slide-container').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll:4,
-    prevArrow: $('.pre-btn'),
-    nextArrow: $('.pos-btn'),   
-    draggable: false 
-  });
+$(document).ready(function(){ 
+    $('.slide-container').slick({
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll:4,
+      prevArrow: $('.pre-btn'),
+      nextArrow: $('.pos-btn'),   
+      draggable: false 
+    }); 
+  
 });
+
 
 fetch(
   "https://raw.githubusercontent.com/luhneumann/recruiting-test/main/data/products.json"
@@ -15,8 +17,9 @@ fetch(
   .then((response) => response.json())
   .then((data) => {
     data.forEach((element) => {
-      console.log(element.product-description)
-      
+      console.log(element.description)
+      console.log(element.oldPrice)
+      console.log(element.image)      
       $(".slide-container").slick(
         "slickAdd",
       `  
@@ -42,4 +45,4 @@ fetch(
     });
   })
 
- 
+  

@@ -10,13 +10,13 @@
 
 body {
   background-color: #f1f1f1;
-  width: 1920px;
+  width: 1920px;  
   height: 2609px;
-  max-width: 100%;
   height: 100%;
 
   header {
     position: relative;
+    width: 1920px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -97,7 +97,7 @@ body {
       }
     }
   }
-  .products-view-1 {
+  .products-view {
     position: relative;
     height: 607px;
     width: 1285px;
@@ -233,5 +233,97 @@ body {
     width: 1285px;
     margin: 0 335px;
     text-align: center;
+    
+  } 
+
+  dialog{
+    width: 20%;
+    height: 200px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 1em rgb(0, 0, .3);
+    text-align: center;
+    background-color: #f1f1f1;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    padding: 1.2rem;
+    opacity: 1;
+    pointer-events: all;
+
+
+    .modal-message{
+      position: relative;
+      margin-top: 60px;     
+    }
+
+    #close-modal-btn{
+      position: relative;
+      width: 120px;
+      height: 45px;
+      background-color: #34cb2e;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 50px;
+    }
+  }
+
+  
+  
+  
+}
+
+footer{
+  width: 1920px;
+  height: 273px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  align-items: center;
+
+  .agrada-info{
+    width: 100%;
+    display: flex;
+    height: 118px;
+    background-color: #000000;
+    align-items: center;
+
+    .logo-footer{
+      margin: 335px;
+      margin-right: 46px;
+    }
+    
+    .footer-description{
+      width: 1020px;
+      height: 58px;
+      text-align: left;
+      color: #ffffff;
+    }    
+  }
+
+  .payment-cards{
+    display: flex;
+    height: 155px;
+    justify-content: center;
+    margin-top: 50px;
+
+    .payment-cards-container{      
+      width: 350px;
+      height: 54.3px;
+      text-align: center;
+
+      .payment-text{
+        color: #34CB2E;
+        font-weight: bold;
+        font-size: 15px;
+      }
+    }
+
+
   }
 }

@@ -12,11 +12,11 @@ body {
   background-color: #f1f1f1;
   width: 1920px;
   height: 2609px;
-  max-width: 100%;
   height: 100%;
 }
 body header {
   position: relative;
+  width: 1920px;
   height: 100px;
   display: flex;
   align-items: center;
@@ -92,20 +92,20 @@ body header .mainmenu .link-block span {
   right: 5px;
   top: -10px;
 }
-body .products-view-1 {
+body .products-view {
   position: relative;
   height: 607px;
   width: 1285px;
   margin: 0 335px;
 }
-body .products-view-1 .slide-title {
+body .products-view .slide-title {
   font-size: 30px;
   font-weight: 800;
   margin-bottom: 30px;
   margin-top: 72px;
 }
-body .products-view-1 .pre-btn,
-body .products-view-1 .pos-btn {
+body .products-view .pre-btn,
+body .products-view .pos-btn {
   width: 35px;
   height: 25px;
   position: absolute;
@@ -119,43 +119,43 @@ body .products-view-1 .pos-btn {
   cursor: pointer;
   z-index: 9;
 }
-body .products-view-1 .pre-btn {
+body .products-view .pre-btn {
   left: -17.5px;
   top: 291px;
 }
-body .products-view-1 .pos-btn {
+body .products-view .pos-btn {
   right: -17px;
   top: 291px;
 }
-body .products-view-1 .slide-container {
+body .products-view .slide-container {
   display: flex;
 }
-body .products-view-1 .slide-container .slick-slide {
+body .products-view .slide-container .slick-slide {
   margin: 0 10px;
 }
-body .products-view-1 .slide-container .card {
+body .products-view .slide-container .card {
   flex-direction: column;
   border-radius: 10px;
   background-color: #ffffff;
 }
-body .products-view-1 .slide-container .card .card-image {
+body .products-view .slide-container .card .card-image {
   height: 300px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body .products-view-1 .slide-container .card .product-image {
+body .products-view .slide-container .card .product-image {
   height: 250px;
   width: 250px;
 }
-body .products-view-1 .slide-container .card .card-info {
+body .products-view .slide-container .card .card-info {
   height: 170px;
   display: grid;
   justify-content: center;
   text-align: center;
 }
-body .products-view-1 .slide-container .card .card-info .product-description {
+body .products-view .slide-container .card .card-info .product-description {
   font-size: 13px;
   text-align: center;
   font-weight: 400;
@@ -163,33 +163,33 @@ body .products-view-1 .slide-container .card .card-info .product-description {
   height: 36px;
   letter-spacing: 0;
 }
-body .products-view-1 .slide-container .card .card-info .old-price {
+body .products-view .slide-container .card .card-info .old-price {
   height: 17px;
 }
-body .products-view-1 .slide-container .card .card-info .old-price span {
+body .products-view .slide-container .card .card-info .old-price span {
   align-items: center;
   font-size: 12px;
   font-weight: 400;
   color: #909090;
   text-decoration: line-through;
 }
-body .products-view-1 .slide-container .card .card-info .sale-price {
+body .products-view .slide-container .card .card-info .sale-price {
   height: 28px;
   color: #34cb2e;
   font-size: 20px;
   font-weight: 900;
 }
-body .products-view-1 .slide-container .card .card-info .payment-condition {
+body .products-view .slide-container .card .card-info .payment-condition {
   font-size: 12px;
   color: #909090;
 }
-body .products-view-1 .slide-container .card .card-btn-container {
+body .products-view .slide-container .card .card-btn-container {
   display: grid;
   align-items: center;
   justify-items: center;
   height: 83px;
 }
-body .products-view-1 .slide-container .card .card-btn-container .card-btn {
+body .products-view .slide-container .card .card-btn-container .card-btn {
   position: relative;
   font-size: 13px;
   background-color: #34cb2e;
@@ -210,4 +210,79 @@ body .banners {
   width: 1285px;
   margin: 0 335px;
   text-align: center;
+}
+body dialog {
+  width: 20%;
+  height: 200px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 1em rgb(0, 0, 0);
+  text-align: center;
+  background-color: #f1f1f1;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  padding: 1.2rem;
+  opacity: 1;
+  pointer-events: all;
+}
+body dialog .modal-message {
+  position: relative;
+  margin-top: 60px;
+}
+body dialog #close-modal-btn {
+  position: relative;
+  width: 120px;
+  height: 45px;
+  background-color: #34cb2e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+footer {
+  width: 1920px;
+  height: 273px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  align-items: center;
+}
+footer .agrada-info {
+  width: 100%;
+  display: flex;
+  height: 118px;
+  background-color: #000000;
+  align-items: center;
+}
+footer .agrada-info .logo-footer {
+  margin: 335px;
+  margin-right: 46px;
+}
+footer .agrada-info .footer-description {
+  width: 1020px;
+  height: 58px;
+  text-align: left;
+  color: #ffffff;
+}
+footer .payment-cards {
+  display: flex;
+  height: 155px;
+  justify-content: center;
+  margin-top: 50px;
+}
+footer .payment-cards .payment-cards-container {
+  width: 350px;
+  height: 54.3px;
+  text-align: center;
+}
+footer .payment-cards .payment-cards-container .payment-text {
+  color: #34CB2E;
+  font-weight: bold;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
