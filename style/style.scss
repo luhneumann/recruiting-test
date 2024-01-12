@@ -77,6 +77,7 @@ body {
         .link-block {
           display: flex;
           min-width: fit-content;
+          /* max-width: 70px; */
           align-items: center;
           justify-content: center;
           margin-right: 17px;
@@ -103,37 +104,70 @@ body {
             padding: 20px;
             opacity: 1;
             pointer-events: all;
-          }
 
-          .login-btn {
-            font-weight: 800;
-            border: none;
-            width: 137px;
-            height: 40px;
+            .login-btn {
+              font-weight: 800;
+              border: none;
+              width: 137px;
+              height: 40px;
+              border-radius: 5px;
+              background: #34cb2e 0% 0% no-repeat padding-box;
+              cursor: pointer;
+            }
+  
+            .or-text {
+              text-align: center;
+              padding: 7px;
+              font-weight: 600;
+            }
+  
+            .signup-btn {
+              border: none;
+              font-weight: 800;
+              color: #ffffff;
+              border-radius: 5px;
+              width: 137px;
+              height: 40px;
+              cursor: pointer;
+              background: #000000 0% 0% no-repeat padding-box;
+            }
+          }          
+
+          #contact-box {
+            display: flex;
+            position: absolute;
+            top: 40px;
+            width: 177px;
+            height: 138px;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff 0% 0% no-repeat padding-box;
+            z-index: 200;
+            border: 1px solid #dddddd;
             border-radius: 5px;
-            background: #34cb2e 0% 0% no-repeat padding-box;
-            cursor: pointer;
-          }
-
-          .or-text {
-            text-align: center;
-            padding: 7px;
-            font-weight: 600;
-          }
-
-          .signup-btn {
-            border: none;
-            font-weight: 800;
-            color: #ffffff;
-            border-radius: 5px;
-            width: 137px;
-            height: 40px;
-            cursor: pointer;
-            background: #000000 0% 0% no-repeat padding-box;
+            padding: 20px;
+            opacity: 1;
+            pointer-events: all;
+        
+            .contact-description {
+              height: 43px;
+              font-size: 12px;
+              font-weight: 600;
+            }
+            .contact-btn {
+              width: 137px;
+              height: 40px;
+              border: none;
+              margin-top: 15px;
+              border-radius: 5px;
+              font-weight: 800;
+              background: #34cb2e 0% 0% no-repeat padding-box;
+            }
           }
 
           .cart-itens {
             display: flex;
+            position: relative;
             width: 12px;
             height: 12px;
             background-color: #000000;
@@ -143,7 +177,7 @@ body {
             font-size: 8px;
             font-weight: bold;
             border-radius: 50%;
-            right: 5px;
+            right: 15px;
             top: -10px;
           }
         }
@@ -315,38 +349,7 @@ body {
       }
     }
   }
-
-  #contact-box {
-    display: flex;
-    position: absolute;
-    top: 40px;
-    width: 177px;
-    height: 138px;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff 0% 0% no-repeat padding-box;
-    z-index: 200;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-    padding: 20px;
-    opacity: 1;
-    pointer-events: all;
-
-    .contact-description {
-      height: 43px;
-      font-size: 12px;
-      font-weight: 600;
-    }
-    .contact-btn {
-      width: 137px;
-      height: 40px;
-      border: none;
-      margin-top: 15px;
-      border-radius: 5px;
-      font-weight: 800;
-      background: #34cb2e 0% 0% no-repeat padding-box;
-    }
-  }
+  
 
   #cart-input-modal {
     width: auto;
