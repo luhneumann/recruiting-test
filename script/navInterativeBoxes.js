@@ -1,5 +1,5 @@
 
-$(document).on('mouseenter', '#mainmenu-login', function() {
+$(document).on('click', '#mainmenu-login', function() {
   // Abrir modal ao clicar no botão  
       $("#login-box").show();
 });
@@ -9,7 +9,7 @@ $(document).on('mouseenter', '#mainmenu-login', function() {
         $("#login-box").hide();
   });
 
-$(document).on('mouseenter', '#mainmenu-contact', function() {
+$(document).on('click', '#mainmenu-contact', function() {
   // Abrir modal ao clicar no botão  
     $("#contact-box").show();
 });

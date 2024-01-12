@@ -36,13 +36,28 @@
       </div>
       <nav class="navbar">
         <ul>
-          <li id="mainmenu-login" class="link-block">
-            <img src="assets/ÍCONE LOGIN.svg" />
-            Faça login
+          <li id="mainmenu-login" class="link-block">            
+              <img src="assets/ÍCONE LOGIN.svg" />
+              Faça login
+            <dialog id="login-box" style="display: none">
+              <div class="login-box-content">
+                <button class="login-btn">Faça o login</button>
+                <p class="or-text"><span>Ou</span></p>
+                <button class="signup-btn">Cadastre-se</button>
+              </div>
+            </dialog>
           </li>
-          <li id="mainmenu-contact" class="link-block">
-            <img src="assets/ÍCONE ATENDIMENTO.svg" />
-            Atendimento
+          <li id="mainmenu-contact" class="link-block">            
+              <img src="assets/ÍCONE ATENDIMENTO.svg" />
+              Atendimento            
+            <dialog id="contact-box" style="display: none">
+              <div class="contact-box-content">
+                <p class="contact-description">
+                  <span>Somos os verdadeiros especialistas em e-commerce</span>
+                </p>
+                <button class="contact-btn">(51)980.272.522</button>
+              </div>
+            </dialog>
           </li>
           <li class="link-block">
             <img src="assets/ÍCONE CARRINHO.svg" />
@@ -52,116 +67,102 @@
         </ul>
       </nav>
     </header>
-    <dialog id="login-box">
-      <div class="login-box-content">
-        <button class="login-btn">Faça o login</button>
-        <p class="or-text"><span>Ou</span></p>
-        <button class="signup-btn">Cadastre-se</button>
-      </div>
-    </dialog>
-    <dialog id="contact-box">
-      <div class="contact-box-content">
-        <p class="contact-description">
-          <span>Somos os verdadeiros especialistas em e-commerce</span>
-        </p>
-        <button class="contact-btn">(51)980.272.522</button>
-      </div>
-    </dialog>
 
-    <div class="full-banner"><img src="assets/FULLBANNER.png" /></div>
-    <div class="slide-arrows">
-      <button class="pre-btn">
-        <img src="assets/ÍCONE SETA ESQUERDA.svg" alt="" />
-      </button>
-      <button class="pos-btn">
-        <img src="assets/ÍCONE SETA DIREITA.svg" alt="" />
-      </button>
-    </div>
+    <div class="full-banner"></div>
+   
     <section id="model-slide-section" class="products-view">
       <h2 class="slide-title">Vitrine de produtos da Agrada Digital</h2>
-
-      <div class="slide-container">
-        <div class="card">
-          <div class="card-image">
-            <img class="product-image" src="assets/itens/b2b.png" alt="" />
-          </div>
-          <div class="card-info">
-            <div class="product-description">
-              <span
-                >Produto do teste de desenvolvedor front-end da agência
-                Agrada</span
-              >
+      <div class="container-slider">
+        <button class="pre-btn" >
+          <img src="assets/ÍCONE SETA ESQUERDA.svg" alt="" />
+        </button>
+        <div class="slide-container">
+          <div class="card">
+            <div class="card-image">
+              <img class="product-image" src="assets/itens/b2b.png" alt="" />
             </div>
-            <del class="old-price"><span>R$ 2049,00</span></del>
-            <span class="sale-price">R$ 1655,90</span>
-            <span class="payment-condition">Ou 10x de R$179,90 sem juros</span>
-            <div class="card-btn-container">
-              <button class="card-btn">Comprar</button>
+            <div class="card-info">
+              <div class="product-description">
+                <span
+                  >Produto do teste de desenvolvedor front-end da agência
+                  Agrada</span
+                >
+              </div>
+              <del class="old-price"><span>R$ 2049,00</span></del>
+              <span class="sale-price">R$ 1655,90</span>
+              <span class="payment-condition">Ou 10x de R$179,90 sem juros</span>
+              <div class="card-btn-container">
+                <button class="card-btn">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img class="product-image" src="assets/itens/b2c.png" alt="" />
+            </div>
+            <div class="card-info">
+              <div class="product-description">
+                <span
+                  >Produto do teste de desenvolvedor front-end da agência
+                  Agrada</span
+                >
+              </div>
+              <del class="old-price"><span>R$ 2049,00</span></del>
+              <span class="sale-price">R$ 1655,90</span>
+              <span class="payment-condition">Ou 10x de R$179,90 sem juros</span>
+              <div class="card-btn-container">
+                <button class="card-btn">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img class="product-image" src="assets/itens/hub.png" alt="" />
+            </div>
+            <div class="card-info">
+              <div class="product-description">
+                <span
+                  >Produto do teste de desenvolvedor front-end da agência
+                  Agrada</span
+                >
+              </div>
+              <del class="old-price"><span>R$ 2049,00</span></del>
+              <span class="sale-price">R$ 1655,90</span>
+              <span class="payment-condition">Ou 10x de R$179,90 sem juros</span>
+              <div class="card-btn-container">
+                <button class="card-btn">Comprar</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                class="product-image"
+                src="assets/itens/marketplace.png"
+                alt=""
+              />
+            </div>
+            <div class="card-info">
+              <div class="product-description">
+                <span
+                  >Produto do teste de desenvolvedor front-end da agência
+                  Agrada</span
+                >
+              </div>
+              <del class="old-price"><span>R$ 2049,00</span></del>
+              <span class="sale-price">R$ 1655,90</span>
+              <span class="payment-condition">Ou 10x de R$179,90 sem juros</span>
+              <div class="card-btn-container">
+                <button class="card-btn">Comprar</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-image">
-            <img class="product-image" src="assets/itens/b2c.png" alt="" />
-          </div>
-          <div class="card-info">
-            <div class="product-description">
-              <span
-                >Produto do teste de desenvolvedor front-end da agência
-                Agrada</span
-              >
-            </div>
-            <del class="old-price"><span>R$ 2049,00</span></del>
-            <span class="sale-price">R$ 1655,90</span>
-            <span class="payment-condition">Ou 10x de R$179,90 sem juros</span>
-            <div class="card-btn-container">
-              <button class="card-btn">Comprar</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image">
-            <img class="product-image" src="assets/itens/hub.png" alt="" />
-          </div>
-          <div class="card-info">
-            <div class="product-description">
-              <span
-                >Produto do teste de desenvolvedor front-end da agência
-                Agrada</span
-              >
-            </div>
-            <del class="old-price"><span>R$ 2049,00</span></del>
-            <span class="sale-price">R$ 1655,90</span>
-            <span class="payment-condition">Ou 10x de R$179,90 sem juros</span>
-            <div class="card-btn-container">
-              <button class="card-btn">Comprar</button>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image">
-            <img
-              class="product-image"
-              src="assets/itens/marketplace.png"
-              alt=""
-            />
-          </div>
-          <div class="card-info">
-            <div class="product-description">
-              <span
-                >Produto do teste de desenvolvedor front-end da agência
-                Agrada</span
-              >
-            </div>
-            <del class="old-price"><span>R$ 2049,00</span></del>
-            <span class="sale-price">R$ 1655,90</span>
-            <span class="payment-condition">Ou 10x de R$179,90 sem juros</span>
-            <div class="card-btn-container">
-              <button class="card-btn">Comprar</button>
-            </div>
-          </div>
-        </div>
+        <button class="pos-btn">
+          <img src="assets/ÍCONE SETA DIREITA.svg" alt="" />
+        </button>
       </div>
+      
     </section>
     <div class="banners">
       <div class="banner">
