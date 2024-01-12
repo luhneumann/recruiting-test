@@ -1,6 +1,6 @@
 
 function cloneSection(){
-  var modelSection = $('#model-slide-section');
+  var modelSection = $('.products-view');
   var newSection = modelSection.clone(true);
   var newSectionId = 'slide-section-2'
   newSection.attr('id', newSectionId);
@@ -11,9 +11,7 @@ function cloneSection(){
 
 cloneSection()
 
-/*$(document).ready(function(){
-  $('#model-slide-section').clone().appendTo('#slide-section-2')
-})*/
+
 
  
 

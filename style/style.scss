@@ -2,203 +2,229 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
   list-style: none;
   text-decoration: none;
+  overflow-x: hidden;
 }
 
 body {
+  position: absolute;
   background-color: #f1f1f1;
-  width: 1920px;  
-  height: 2609px;
-  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
 
-  header {
+header {
+  height: auto;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  z-index: 100;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  padding: 5px;
+  justify-content: center;
+
+  .logo {
     position: relative;
-    width: 1920px;
-    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: #ffffff 0% 0% no-repeat padding-box;
-
-    .logo {
-      display: flex;
-      align-items: center;
-      padding-left: 335px;
-      padding-right: 36px;
-    }
-
-    .mainmenu {
-      display: flex;
-      align-items: center;
-      width: 995px;
-      height: 45px;
-
-      input {
-        width: 469px;
-        height: 45px;
-        padding: 14px;
-        border-radius: 5px;
-        outline: 0;
-        border: none;
-        background: #ededed;
-        opacity: 1;
-      }
-
-      ::placeholder {
-        background-color: #ededed;
-      }
-
-      button {
-        width: 120px;
-        height: 45px;
-        margin-right: 33px;
-        background: #34cb2e;
-        font-size: 14px;
-        font-weight: bold;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        outline: none;
-        opacity: 1;
-      }
-
-      .link-block {
-        display: flex;
-        align-items: center;
-        margin-left: 17px;
-        height: 23px;
-
-        a {
-          position: relative;
-          display: flex;
-          color: #000000;
-          font-size: 12px;
-          padding-left: 10px;
-        }
-
-        span {
-          position: relative;
-          display: flex;
-          width: 12px;
-          height: 12px;
-          background-color: #000000;
-          justify-content: center;
-          align-items: center;
-          color: #fff;
-          font-size: 8px;
-          font-weight: bold;
-          border-radius: 50%;
-          right: 5px;
-          top: -10px;
-        }
-      }
-    }
+    justify-content: center;
+    width: 400px;
   }
-  .products-view {
-    position: relative;
-    height: 607px;
-    width: 1285px;
-    margin: 0 335px;
 
-    .slide-title {
-      font-size: 30px;
-      font-weight: 800;
-      margin-bottom: 30px;
-      margin-top: 72px;
-    }   
+  .mainmenu-research {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 690px;
+    min-width: 300px;
+    z-index: 120;
+    background-color: #ffffff;
 
-    .pre-btn,
-    .pos-btn{
-      width: 35px;
-      height: 25px;
-      position: absolute;
-      top: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #000000;
+    input {
+      width: 469px;
+      height: 45px;
+      padding: 14px;
+      border-radius: 5px;
+      outline: 0;
+      border: none;
+      background: #ededed;
+      opacity: 1;
+    }
+
+    button {
+      width: 120px;
+      min-width: 80px;
+      height: 45px;
+      margin: 0 5px;
+      background: #34cb2e;
+      font-size: 14px;
+      font-weight: bold;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      z-index: 9;
+      outline: none;
+      opacity: 1;
     }
+  }
 
-    .pre-btn{
-      left: -17.5px;
-      top: 291px;
-    }
-    .pos-btn{
-      right: -17px;
-      top: 291px;
-    }
-
-    .slide-container {
+  .navbar {
+    ul {
       display: flex;
-    
+      margin-left: 10px;
+    }
 
-      .slick-slide {       
-          margin: 0 10px;     
-      }
+    .link-block {
+      display: flex;
+      min-width: fit-content;
+      align-items: center;
+      justify-content: center;
+      margin-right: 17px;
+      height: 45px;
+      gap: 10px;
+      cursor: pointer;
+      pointer-events: all;
+    }
 
-      .card {
-        flex-direction: column;        
-        border-radius: 10px;
-        background-color: #ffffff; 
-        
+    .cart-itens {
+      display: flex;
+      width: 12px;
+      height: 12px;
+      background-color: #000000;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 8px;
+      font-weight: bold;
+      border-radius: 50%;
+      right: 5px;
+      top: -10px;
+    }
+  }
+}
 
-        .card-image {
-          height: 300px;
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
+.full-banner {
+  display: flex;
+  height: auto;
+  
+}
+
+.slide-arrows {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+
+  .pre-btn,
+  .pos-btn {
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    top: 50%;
+    transform: translateX(-50%);
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9;
+  }
+
+  .pre-btn {
+    left: -17.5px;
+    top: 291px;
+  }
+  .pos-btn {
+    right: -17px;
+    top: 291px;
+  }
+}
+
+.products-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .slide-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 40px;
+    padding-left: 40px;
+    margin-left: 10px;
+  }
+
+  .slide-container {
+    display: flex;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    width: 1250px;
+    max-width: 80%;
+
+    .slick-slide {
+      margin: 0 10px;
+    }
+
+    .card {
+      display: grid;
+      border-radius: 10px;
+      background-color: #ffffff;
+      width: 310px;
+
+      .card-image {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .product-image {
           height: 250px;
           width: 250px;
         }
+      }
 
-        .card-info {
-          height: 170px;
-          display: grid;
-          justify-content: center;
+      .card-info {
+        position: relative;
+        display: grid;
+        padding: 5px;
+        justify-content: center;
+        text-align: center;
+
+        .product-description {
+          font-size: 13px;
           text-align: center;
+          font-weight: 400;
+          width: 230px;
+          height: 36px;
+          letter-spacing: 0;
+        }
 
-          .product-description {
-            font-size: 13px;
-            text-align: center;
-            font-weight: 400;
-            width: 230px;
-            height: 36px;
-            letter-spacing: 0;
-          }
+        .old-price {
+          height: 17px;
+        }
+        .old-price span {
+          align-items: center;
+          font-size: 12px;
+          font-weight: 400;
+          color: #909090;
+          text-decoration: line-through;
+        }
 
-          .old-price {
-            height: 17px;
-          }
-          .old-price span {
-            align-items: center;
-            font-size: 12px;
-            font-weight: 400;
-            color: #909090;
-            text-decoration: line-through;
-          }
+        .sale-price {
+          height: 28px;
+          color: #34cb2e;
+          font-size: 20px;
+          font-weight: 900;
+        }
 
-          .sale-price {
-            height: 28px;
-            color: #34cb2e;
-            font-size: 20px;
-            font-weight: 900;
-          }
-
-          .payment-condition {
-            font-size: 12px;
-            color: #909090;
-          }
+        .payment-condition {
+          font-size: 12px;
+          color: #909090;
         }
 
         .card-btn-container {
@@ -227,103 +253,181 @@ body {
       }
     }
   }
-
-  .banners{
-    height: 260px;
-    width: 1285px;
-    margin: 0 335px;
-    text-align: center;
-    
-  } 
-
-  dialog{
-    width: 20%;
-    height: 200px;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 0 1em rgb(0, 0, .3);
-    text-align: center;
-    background-color: #f1f1f1;
-    z-index: 10;
-    transform: translate(-50%, -50%);
-    padding: 1.2rem;
-    opacity: 1;
-    pointer-events: all;
-
-
-    .modal-message{
-      position: relative;
-      margin-top: 60px;     
-    }
-
-    #close-modal-btn{
-      position: relative;
-      width: 120px;
-      height: 45px;
-      background-color: #34cb2e;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      margin-top: 50px;
-    }
-  }
-
-  
-  
-  
 }
 
-footer{
-  width: 1920px;
-  height: 273px;
+.banners {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
+  .banner {
+    display: flex;
+    padding: 5px;
+    max-width: 80%;
+  }
+}
+
+#login-box {
+  display: flex;
+  position: absolute;
+  width: 177px;
+  height: 157px;
+  left: 1530px;
+  top: 75px;
+
+  justify-content: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  z-index: 200;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 20px;
+  opacity: 1;
+  pointer-events: all;
+
+  .login-btn {
+    font-weight: 800;
+    border: none;
+    width: 137px;
+    height: 40px;
+    border-radius: 5px;
+    background: #34cb2e 0% 0% no-repeat padding-box;
+    cursor: pointer;
+  }
+
+  .or-text {
+    text-align: center;
+    padding: 7px;
+    font-weight: 600;
+  }
+
+  .signup-btn {
+    border: none;
+    font-weight: 800;
+    color: #ffffff;
+    border-radius: 5px;
+    width: 137px;
+    height: 40px;
+    cursor: pointer;
+    background: #000000 0% 0% no-repeat padding-box;
+  }
+}
+
+#contact-box {
+  display: flex;
+  position: absolute;
+  left: 1650px;
+  top: 75px;
+  width: 177px;
+  height: 138px;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  z-index: 200;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 20px;
+  opacity: 1;
+  pointer-events: all;
+
+  .contact-description {
+    height: 43px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .contact-btn {
+    width: 137px;
+    height: 40px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: 800;
+    background: #34cb2e 0% 0% no-repeat padding-box;
+  }
+}
+
+#cart-input-modal {
+  width: auto;
+  max-width: 400px;
+  height: auto;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 1em rgb(0, 0, 0.3);
+  text-align: center;
+  background-color: #f1f1f1;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  padding: 1.2rem;
+  opacity: 1;
+  pointer-events: all;
+
+  .modal-message {
+    position: relative;
+  }
+
+  #close-modal-btn {
+    position: relative;
+    width: 120px;
+    height: 45px;
+    background-color: #34cb2e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
+
+footer {
+  display: grid;
+  width: 100%;
+  
+  justify-content: center;
+  height: auto;
   font-size: 12px;
   letter-spacing: -0.3px;
   align-items: center;
+  flex-wrap: wrap;
 
-  .agrada-info{
-    width: 100%;
+  .agrada-info {
     display: flex;
-    height: 118px;
+    min-height: 118px;
+    height: auto;
     background-color: #000000;
     align-items: center;
+    gap: 40px;
+    padding-left: 30px;
 
-    .logo-footer{
-      margin: 335px;
-      margin-right: 46px;
-    }
-    
-    .footer-description{
+     .footer-description {
       width: 1020px;
       height: 58px;
       text-align: left;
       color: #ffffff;
-    }    
+    }
   }
 
-  .payment-cards{
+  .payment-cards {
     display: flex;
-    height: 155px;
+    height: auto;
+    max-height: 155px;
     justify-content: center;
     margin-top: 50px;
+    margin-bottom: 50.7px;
 
-    .payment-cards-container{      
+    .payment-cards-container {
       width: 350px;
       height: 54.3px;
       text-align: center;
 
-      .payment-text{
-        color: #34CB2E;
+      .payment-text {
+        color: #34cb2e;
         font-weight: bold;
         font-size: 15px;
       }
     }
-
-
   }
 }

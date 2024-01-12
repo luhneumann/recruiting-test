@@ -1,15 +1,30 @@
-$(document).ready(function(){ 
-    $('.slide-container').slick({
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll:4,
-      prevArrow: $('.pre-btn'),
-      nextArrow: $('.pos-btn'),   
-      draggable: false 
-    }); 
-  
-});
+$(document).ready(function () {
+  $(".slide-container").slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    prevArrow: $(".pre-btn"),
+    nextArrow: $(".pos-btn"),
+    draggable: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScrow: 2,
+        },
+      },
 
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScrow: 1,
+        },
+      },
+    ],
+  });
+});
 
 fetch(
   "https://raw.githubusercontent.com/luhneumann/recruiting-test/main/data/products.json"
@@ -17,12 +32,12 @@ fetch(
   .then((response) => response.json())
   .then((data) => {
     data.forEach((element) => {
-      console.log(element.description)
-      console.log(element.oldPrice)
-      console.log(element.image)      
+      console.log(element.description);
+      console.log(element.oldPrice);
+      console.log(element.image);
       $(".slide-container").slick(
         "slickAdd",
-      `  
+        `  
         <div class="card">            
           <div class="card-image">
             <img class="product-image" src="${element.image}" alt=""/>
@@ -39,10 +54,7 @@ fetch(
             </div>                
           </div>   
         </div>         
-        `    
-      );        
-      
+        `
+      );
     });
-  })
-
-  
+  });
